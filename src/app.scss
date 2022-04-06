@@ -1,0 +1,526 @@
+@import "scss/abstracts/variables";
+@import "scss/abstracts/mixins";
+
+@import "scss/core/reset";
+@import "scss/core/typography";
+
+@import "scss/components/buttons";
+
+@import "scss/layout/footer";
+@import "scss/layout/grid";
+@import "scss/layout/header";
+@import "scss/layout/navigation";
+@import "scss/layout/sidebar";
+
+@import "scss/pages/home";
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #100e17;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  padding-top: 10rem;
+}
+p {
+  font-size: 1.6rem;
+}
+/** Globales **/
+h1,
+h2,
+h3 {
+  color: #ffffff;
+  margin: 0;
+}
+h1 {
+  font-weight: 900;
+  font-size: 6rem;
+}
+h2 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+.separator {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid #272727;
+}
+
+// @media (min-width: 768px) {
+//   .candidato,
+//   .job {
+//     display: flex;
+//   }
+//   .box {
+//     flex: 1;
+//   }
+//   .box:first-of-type {
+//     flex: 2;
+//   }
+// }
+// .candidato,
+// .job {
+//   padding: 3rem 1.5rem;
+//   background-color: #28272f;
+//   margin-bottom: 2rem;
+//   border-radius: 5px;
+//   box-shadow: 1px 4px 10px #000;
+// }
+// .candidato,
+// .job:last-of-type {
+//   border: none;
+// }
+// .box {
+//   padding: 0.5rem 0;
+// }
+// .box p {
+//   color: #ffffff;
+// }
+// .contrato {
+//   text-transform: capitalize;
+// }
+// .box .position,
+// .box .etiqueta {
+//   font-weight: 700;
+//   color: #616065;
+//   font-size: 2.6rem;
+//   margin: 0;
+//   text-align: left;
+// }
+// .box .etiqueta {
+//   margin: 1rem 0 0 0;
+// }
+// .box .nombre {
+//   font-size: 2.4rem;
+//   margin: 0.5rem 0;
+//   text-align: left;
+// }
+// .box .btn {
+//   text-align: center;
+// }
+
+.centrar-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.centrar-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.job-contenedor h2 {
+  color: #616065;
+  font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .job-contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .job-contenedor main {
+    flex: 0 0 60%;
+  }
+  .job-contenedor aside {
+    flex: 0 0 calc(40% - 2rem);
+  }
+}
+.job-descripcion h1 {
+  line-height: 1.4;
+}
+.job-descripcion * {
+  color: white !important;
+  line-height: 2.2;
+}
+.skills {
+  color: white;
+}
+.skills li,
+.job-descripcion div {
+  font-size: 1.8rem;
+  line-height: 2.4;
+}
+
+.enviar-datos h2 {
+  font-size: 4rem;
+  color: white;
+}
+.enviar-datos p {
+  color: white;
+  font-size: 1.8rem;
+}
+.enviar-datos form {
+}
+
+/** Iniciar Sesión **/
+.default-form {
+  max-width: 800px;
+  margin: 4rem auto 0 auto;
+}
+.default-form h3 {
+  color: #616065;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+.default-form .campo {
+  margin-bottom: 3rem;
+  display: flex;
+}
+.default-form label {
+  padding-top: 1rem;
+  flex: 0 0 18rem;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.default-form input[type="email"],
+.default-form input[type="password"],
+.default-form input[type="text"],
+.default-form input[type="number"],
+.default-form input[type="file"],
+.default-form select,
+.default-form textarea {
+  flex: 1;
+  height: 4.5rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.default-form input[type="file"] {
+  color: white;
+}
+trix-toolbar,
+trix-editor {
+  background-color: white !important;
+}
+trix-toolbar {
+  padding: 1rem;
+}
+trix-editor {
+  font-size: 1.8rem;
+  min-height: 30rem !important;
+  padding: 2rem;
+}
+trix-editor h1,
+trix-editor blockquote {
+  color: black;
+}
+trix-toolbar .trix-button-group {
+  margin-bottom: 0;
+}
+trix-toolbar .trix-button--icon-strike {
+  display: none;
+}
+.campo.descripcion {
+  display: block;
+}
+.campo.descripcion label {
+  display: block;
+  margin-bottom: 2rem;
+}
+.default-form input[type="submit"] {
+  margin-top: 2rem;
+}
+.default-form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.default-form .acciones {
+  display: flex;
+  justify-content: space-between;
+}
+.default-form a {
+  color: #616065;
+  text-decoration: none;
+}
+
+.lista-conocimientos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.lista-conocimientos li {
+  border: 2px solid #00c897;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  flex: 0 0 calc(50% - 1rem);
+  text-align: center;
+  border-radius: 1rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lista-conocimientos li.activo {
+  background-color: #00c897;
+}
+.lista-conocimientos li:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  .lista-conocimientos li {
+    flex: 0 0 calc(33% - 1rem);
+  }
+}
+@media (min-width: 768px) {
+  .lista-conocimientos li {
+    flex: 0 0 calc(25% - 1rem);
+  }
+}
+@media (min-width: 992px) {
+  .lista-conocimientos li {
+    flex: 0 0 calc(20% - 1rem);
+  }
+}
+
+/** Admin **/
+
+p.candidatos {
+  font-weight: 400;
+  color: white;
+  display: block;
+  font-size: 1.8rem;
+  margin: 1rem 0 0 0;
+  text-align: left !important;
+  text-decoration: none;
+  color: #616065;
+}
+.admin-perfil {
+  width: 120px;
+  align-self: flex-start;
+  margin-right: 1rem;
+}
+.auth-menu p,
+.auth-menu a {
+  margin: 0 2rem 0 0;
+  color: #888;
+}
+.auth-menu {
+  margin-top: 3rem;
+  color: white;
+  display: flex;
+}
+.auth-menu img {
+  width: 80px;
+}
+.botones {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 0 5rem 0;
+  margin-bottom: 5rem;
+}
+.botones a {
+  margin-right: 2rem;
+}
+.lista-candidatos p,
+
+
+
+
+/** Biografia Vacante **/
+.info-reclutador h2 {
+  color: #616065;
+  font-size: 2.4rem;
+}
+.info-reclutador img {
+  max-width: 300px;
+  width: 100%;
+}
+.datos-reclutador {
+  border-top: 3px solid #272727;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.datos-reclutador p {
+  font-size: 2.4rem;
+  color: white;
+}
+@media (min-width: 768px) {
+  .enviar-datos {
+    flex: 0 0 calc(70% - 1rem);
+  }
+  .info-reclutador {
+    flex: 0 0 calc(30% - 1rem);
+  }
+}
+.enviar-datos h2 {
+  font-size: 4rem;
+  color: white;
+}
+.enviar-datos p {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.admin-perfil {
+  width: 120px;
+  align-self: flex-start;
+  margin-right: 1rem;
+}
+
+.btn-edit {
+  margin-top: 4rem;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.header-home {
+  position: relative;
+  background-image: url(./img/header-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+
+  &::after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #100e1770;
+  }
+}
+
+.jobs-list {
+  padding: 5rem 0rem;
+
+  &-title {
+    margin-bottom: 2rem;
+  }
+
+  .job {
+    padding: 3rem 2.5rem;
+    background-color: #28272f;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px #000;
+    flex-wrap: wrap;
+
+    .box {
+      padding: 0.5rem 0;
+      
+    
+      &-title {
+        margin-bottom: 1rem;
+        svg {
+          color: rgb(223, 219, 219);
+          width: 0.8em;
+          height: 0.8em;
+        }
+      }
+
+      p {
+        color: #ffffff;
+      }
+
+      .contrato {
+        text-transform: capitalize;
+      }
+
+      .etiqueta {
+        margin: 1rem 0 0 0;
+      }
+
+      .nombre {
+        font-size: 2.4rem;
+        margin: 0.5rem 0;
+        text-align: left;
+      }
+
+      .btn {
+        text-align: center;
+      }
+
+      .position,
+      .etiqueta,.box-company {
+        font-weight: 700;
+        color: #616065;
+        font-size: 2.6rem;
+        margin: 1rem 0 0 0;
+        text-align: left;
+
+        svg {
+          color: rgb(223, 219, 219);
+          width: 0.8em;
+          height: 0.8em;
+        }
+      }
+
+      @media (min-width: 768px) {
+        flex: 1;
+        &:first-of-type {
+          flex: 2;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    .skills{
+      flex: 0 0 100%;
+      margin-top: 1.6rem;
+        span{
+          background-color: #1c1c24;
+          padding: .5rem .9rem;
+          border-radius: 5px;
+          margin-right: .6rem;
+          &:last-of-type{
+            margin-right: 0;
+          }
+        }
+    }
+  }
+}
+
+.job-view {
+    padding: 6rem 0;
+  .job-info {
+    display: flex;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .job-details {
+    justify-content: space-between;
+    display: flex;
+  }
+}

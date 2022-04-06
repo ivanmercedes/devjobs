@@ -1,0 +1,806 @@
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/app.scss ***!
+  \*******************************************************************************************************/
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0; }
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block; }
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent; }
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%; }
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none; }
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline; }
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto; }
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block; }
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item; }
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none; }
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none; }
+
+/** Botones **/
+.btn {
+  font-size: 1.8rem;
+  padding: 1.4rem 6rem;
+  border-radius: 0.6rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease-out;
+  display: block;
+  border: none; }
+
+.btn-green {
+  background-color: #0dcaf0; }
+  .btn-green:hover {
+    background: #0aa1c0; }
+
+.btn-blue {
+  background-color: #0d6efd; }
+  .btn-blue:hover {
+    background: #0257d5; }
+
+.btn-yellow {
+  background-color: #f6b15f; }
+  .btn-yellow:hover {
+    background: #f3992f; }
+
+.btn-red {
+  background-color: #c80045; }
+  .btn-red:hover {
+    background: #950033; }
+
+/** Header **/
+.tagline {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin: 2rem 0 3rem 0; }
+
+.site-header {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 5rem; }
+
+.nombre-sitio {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: #100e17;
+  top: 0;
+  padding: 1rem;
+  box-shadow: 1px 3px 6px #000;
+  left: 0;
+  z-index: 2; }
+
+.nombre-sitio a {
+  color: white;
+  text-decoration: none; }
+
+.buscador {
+  padding-top: 1rem;
+  justify-content: flex-end;
+  flex: 1;
+  padding: 1.5rem 2rem 0 2rem; }
+
+.buscador form {
+  flex: 1;
+  position: relative; }
+
+@media (min-width: 768px) {
+  .buscador form {
+    flex: 0 0 40%; } }
+
+.buscador input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  border: none;
+  padding: 0.5rem 4rem 0.5rem 2rem;
+  height: 5rem;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.2rem; }
+
+.buscador button[type="submit"] {
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white; }
+  .buscador button[type="submit"] svg {
+    display: block; }
+
+.buscador button[type="submit"]:hover {
+  cursor: pointer; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  background-color: #100e17;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  padding-top: 10rem; }
+
+p {
+  font-size: 1.6rem; }
+
+/** Globales **/
+h1,
+h2,
+h3 {
+  color: #ffffff;
+  margin: 0; }
+
+h1 {
+  font-weight: 900;
+  font-size: 6rem; }
+
+h2 {
+  font-weight: 700;
+  font-size: 4rem; }
+
+h3 {
+  font-size: 2.8rem; }
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative; }
+
+.separator {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid #272727; }
+
+.centrar-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.centrar-horizontal {
+  display: flex;
+  justify-content: center; }
+
+.job-contenedor h2 {
+  color: #616065;
+  font-size: 2.4rem; }
+
+@media (min-width: 768px) {
+  .job-contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .job-contenedor main {
+    flex: 0 0 60%; }
+  .job-contenedor aside {
+    flex: 0 0 calc(40% - 2rem); } }
+
+.job-descripcion h1 {
+  line-height: 1.4; }
+
+.job-descripcion * {
+  color: white !important;
+  line-height: 2.2; }
+
+.skills {
+  color: white; }
+
+.skills li,
+.job-descripcion div {
+  font-size: 1.8rem;
+  line-height: 2.4; }
+
+.enviar-datos h2 {
+  font-size: 4rem;
+  color: white; }
+
+.enviar-datos p {
+  color: white;
+  font-size: 1.8rem; }
+
+/** Iniciar Sesión **/
+.default-form {
+  max-width: 800px;
+  margin: 4rem auto 0 auto; }
+
+.default-form h3 {
+  color: #616065;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase; }
+
+.default-form .campo {
+  margin-bottom: 3rem;
+  display: flex; }
+
+.default-form label {
+  padding-top: 1rem;
+  flex: 0 0 18rem;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.default-form input[type="email"],
+.default-form input[type="password"],
+.default-form input[type="text"],
+.default-form input[type="number"],
+.default-form input[type="file"],
+.default-form select,
+.default-form textarea {
+  flex: 1;
+  height: 4.5rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  border: none; }
+
+.default-form input[type="file"] {
+  color: white; }
+
+trix-toolbar,
+trix-editor {
+  background-color: white !important; }
+
+trix-toolbar {
+  padding: 1rem; }
+
+trix-editor {
+  font-size: 1.8rem;
+  min-height: 30rem !important;
+  padding: 2rem; }
+
+trix-editor h1,
+trix-editor blockquote {
+  color: black; }
+
+trix-toolbar .trix-button-group {
+  margin-bottom: 0; }
+
+trix-toolbar .trix-button--icon-strike {
+  display: none; }
+
+.campo.descripcion {
+  display: block; }
+
+.campo.descripcion label {
+  display: block;
+  margin-bottom: 2rem; }
+
+.default-form input[type="submit"] {
+  margin-top: 2rem; }
+
+.default-form input[type="submit"]:hover {
+  cursor: pointer; }
+
+.default-form .acciones {
+  display: flex;
+  justify-content: space-between; }
+
+.default-form a {
+  color: #616065;
+  text-decoration: none; }
+
+.lista-conocimientos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.lista-conocimientos li {
+  border: 2px solid #00c897;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  flex: 0 0 calc(50% - 1rem);
+  text-align: center;
+  border-radius: 1rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.lista-conocimientos li.activo {
+  background-color: #00c897; }
+
+.lista-conocimientos li:hover {
+  cursor: pointer; }
+
+@media (min-width: 480px) {
+  .lista-conocimientos li {
+    flex: 0 0 calc(33% - 1rem); } }
+
+@media (min-width: 768px) {
+  .lista-conocimientos li {
+    flex: 0 0 calc(25% - 1rem); } }
+
+@media (min-width: 992px) {
+  .lista-conocimientos li {
+    flex: 0 0 calc(20% - 1rem); } }
+
+/** Admin **/
+p.candidatos {
+  font-weight: 400;
+  color: white;
+  display: block;
+  font-size: 1.8rem;
+  margin: 1rem 0 0 0;
+  text-align: left !important;
+  text-decoration: none;
+  color: #616065; }
+
+.admin-perfil {
+  width: 120px;
+  align-self: flex-start;
+  margin-right: 1rem; }
+
+.auth-menu p,
+.auth-menu a {
+  margin: 0 2rem 0 0;
+  color: #888; }
+
+.auth-menu {
+  margin-top: 3rem;
+  color: white;
+  display: flex; }
+
+.auth-menu img {
+  width: 80px; }
+
+.botones {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 0 5rem 0;
+  margin-bottom: 5rem; }
+
+.botones a {
+  margin-right: 2rem; }
+
+.lista-candidatos p,
+.info-reclutador h2 {
+  color: #616065;
+  font-size: 2.4rem; }
+
+.info-reclutador img {
+  max-width: 300px;
+  width: 100%; }
+
+.datos-reclutador {
+  border-top: 3px solid #272727;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem; }
+
+.datos-reclutador p {
+  font-size: 2.4rem;
+  color: white; }
+
+@media (min-width: 768px) {
+  .enviar-datos {
+    flex: 0 0 calc(70% - 1rem); }
+  .info-reclutador {
+    flex: 0 0 calc(30% - 1rem); } }
+
+.enviar-datos h2 {
+  font-size: 4rem;
+  color: white; }
+
+.enviar-datos p {
+  color: white;
+  font-size: 1.8rem; }
+
+.admin-perfil {
+  width: 120px;
+  align-self: flex-start;
+  margin-right: 1rem; }
+
+.btn-edit {
+  margin-top: 4rem;
+  flex: 0 0 auto;
+  text-align: center; }
+
+.header-home {
+  position: relative;
+  background-image: url(7fff486ee2ba06388d5c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center; }
+  .header-home::after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #100e1770; }
+
+.jobs-list {
+  padding: 5rem 0rem; }
+  .jobs-list-title {
+    margin-bottom: 2rem; }
+  .jobs-list .job {
+    padding: 3rem 2.5rem;
+    background-color: #28272f;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px #000;
+    flex-wrap: wrap; }
+    .jobs-list .job .box {
+      padding: 0.5rem 0; }
+      .jobs-list .job .box-title {
+        margin-bottom: 1rem; }
+        .jobs-list .job .box-title svg {
+          color: #dfdbdb;
+          width: 0.8em;
+          height: 0.8em; }
+      .jobs-list .job .box p {
+        color: #ffffff; }
+      .jobs-list .job .box .contrato {
+        text-transform: capitalize; }
+      .jobs-list .job .box .etiqueta {
+        margin: 1rem 0 0 0; }
+      .jobs-list .job .box .nombre {
+        font-size: 2.4rem;
+        margin: 0.5rem 0;
+        text-align: left; }
+      .jobs-list .job .box .btn {
+        text-align: center; }
+      .jobs-list .job .box .position,
+      .jobs-list .job .box .etiqueta, .jobs-list .job .box .box-company {
+        font-weight: 700;
+        color: #616065;
+        font-size: 2.6rem;
+        margin: 1rem 0 0 0;
+        text-align: left; }
+        .jobs-list .job .box .position svg,
+        .jobs-list .job .box .etiqueta svg, .jobs-list .job .box .box-company svg {
+          color: #dfdbdb;
+          width: 0.8em;
+          height: 0.8em; }
+      @media (min-width: 768px) {
+        .jobs-list .job .box {
+          flex: 1; }
+          .jobs-list .job .box:first-of-type {
+            flex: 2; } }
+    @media (min-width: 768px) {
+      .jobs-list .job {
+        display: flex; } }
+    .jobs-list .job .skills {
+      flex: 0 0 100%;
+      margin-top: 1.6rem; }
+      .jobs-list .job .skills span {
+        background-color: #1c1c24;
+        padding: .5rem .9rem;
+        border-radius: 5px;
+        margin-right: .6rem; }
+        .jobs-list .job .skills span:last-of-type {
+          margin-right: 0; }
+
+.job-view {
+  padding: 6rem 0; }
+  .job-view .job-info {
+    display: flex;
+    margin-top: 6rem;
+    margin-bottom: 6rem; }
+  .job-view .job-details {
+    justify-content: space-between;
+    display: flex; }
+

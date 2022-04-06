@@ -1,0 +1,32 @@
+<div class="jobs-list container">
+    <h2>Navegacion</h2>
+    <div class="botones separador">
+        <a href="/editar-perfil" class="btn btn-blue">Editar Perfil</a>
+        <a href="/vacantes/nueva" class="btn btn-green">Nueva Vacante</a>
+    </div>
+
+    <h2>Tus Vacantes</h2>
+<div class="panel-administracion ">
+    {{#if vacancies.length}}
+        {{#each vacancies}}
+            <div class="vacante panel-administracion">
+                <div class="box">
+                    <h3>{{company}}</h3>
+                    <p class="position">{{title}}</p>
+                </div>
+                <div class="centrar-vertical box">
+                    <a href="/candidatos/{{_id}}" class="btn btn-yellow">Candidatos</a>
+                </div>
+                <div class="centrar-vertical box">
+                    <a href="/vacantes/editar/{{url}}" class="btn btn-green">Editar</a>
+                </div>
+                <div class="centrar-vertical box">
+                    <a href="#" data-delete="{{_id}}" class="btn btn-red">Elminar</a>
+                </div>
+            </div>
+        {{/each}}
+    {{else}}
+        <p>No hay vacantes, crea una</p>
+    {{/if}}
+    </div>
+</div>

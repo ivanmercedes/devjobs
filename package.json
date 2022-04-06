@@ -1,0 +1,47 @@
+{
+  "name": "devjobs",
+  "version": "1.0.0",
+  "description": "Portal de trabajo para informaticos NodeJs, Mongoose, Handlebars.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --quiet ./index",
+    "watch": "webpack --watch --mode=development",
+    "start": "concurrently  \"npm run dev\" \"npm run watch\" "
+  },
+  "author": "Ivan Mercedes <ivanmercede@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.5.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
+    "mongoose": "^6.1.4",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.16",
+    "slug": "^5.2.0",
+    "sweetalert2": "^11.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1"
+  }
+}

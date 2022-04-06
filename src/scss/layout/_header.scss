@@ -1,0 +1,78 @@
+/** Header **/
+.tagline {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin: 2rem 0 3rem 0;
+  }
+  
+  .site-header {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+  }
+  
+  .nombre-sitio {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: #100e17;
+    top: 0;
+    padding: 1rem;
+    box-shadow: 1px 3px 6px #000;
+    left: 0;
+    z-index: 2;
+  }
+  .nombre-sitio a {
+    color: white;
+    text-decoration: none;
+  }
+  .buscador {
+    padding-top: 1rem;
+    // display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    padding: 1.5rem 2rem 0 2rem;
+  }
+  .buscador form {
+    flex: 1;
+    position: relative;
+  }
+  @media (min-width: 768px) {
+    .buscador form {
+      flex: 0 0 40%;
+    }
+  }
+  .buscador input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    border: none;
+    padding: 0.5rem 4rem 0.5rem 2rem;
+    height: 5rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .buscador button[type="submit"] {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    svg{
+        display: block;
+    }
+  }
+  .buscador button[type="submit"]:hover {
+    cursor: pointer;
+  }

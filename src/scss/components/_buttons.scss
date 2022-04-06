@@ -1,0 +1,23 @@
+/** Botones **/
+.btn {
+  font-size: 1.8rem;
+  padding: 1.4rem 6rem;
+  border-radius: 0.6rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease-out;
+  display: block;
+  border: none;
+}
+
+@each $color, $value in $btn-colors {
+  .btn-#{$color} {
+    background-color: $value;
+    &:hover {
+      background: darken($value, 10%);
+    }
+  }
+}
+

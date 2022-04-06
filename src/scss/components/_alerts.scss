@@ -1,0 +1,41 @@
+/** Alertas **/
+.swal2-popup {
+  width: 60rem !important;
+}
+.swal2-popup .swal2-title {
+  font-size: 3.4rem !important;
+}
+.swal2-content {
+  font-size: 2rem !important;
+}
+.swal2-popup .swal2-styled.swal2-cancel,
+.swal2-popup .swal2-styled.swal2-confirm {
+  font-size: 2rem !important;
+}
+
+/** Flash Messages **/
+.alertas {
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 65px;
+}
+.alerta {
+  padding: 1rem 3rem;
+  color: white;
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0.3rem;
+}
+.correcto {
+  background-color: #00c897;
+}
+.error {
+  background-color: #c80045;
+}
+.desaparecer {
+  opacity: 0;
+}

@@ -1,0 +1,97 @@
+<article class="job-view">
+  <header class="container">
+    <h1>{{job.title}}</h1>
+    <div class="separator"></div>
+  </header>
+  <div class="job-info container">
+
+    <div class="box">
+      <p class="etiqueta">Empresa</p>
+      <p class="nombre">{{job.company}}</p>
+    </div>
+
+    <div class="box">
+      <p class="etiqueta">Ubicacion</p>
+      <p class="nombre">{{job.location}}</p>
+    </div>
+
+    <div class="box">
+      <p class="etiqueta">Contracto</p>
+      <p class="nombre">{{job.contract}}</p>
+    </div>
+
+    <div class="box">
+      <p class="etiqueta">Salario</p>
+      <p class="nombre">$ {{job.salary}}</p>
+    </div>
+
+  </div>
+
+  <div class="job-details container">
+    <main class="contenido">
+      <h2>Descripcion del position</h2>
+      <div class="vacante-descripcion">
+        {{{job.description}}}
+      </div>
+
+      <a
+        href="/vacantes/editar/{{job.url}}"
+        class="btn btn-blue btn-edit"
+      >Editar Vacante</a>
+    </main>
+
+    <aside class="sidebar">
+      <h2>Conocimientos Deseados</h2>
+      <ul class="skills">
+        {{#each job.skills}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </aside>
+  </div>
+
+  <div class="container datos-reclutador">
+    <div class="enviar-datos">
+      <h2>Contactar Reclutador</h2>
+      <p>Llena el siguiente formulario, sube curriculum y pronto te
+        contactaremos</p>
+
+      <form
+        method="post"
+        action="/vacantes/{{job.url}}"
+        class="default-form"
+        enctype="multipart/form-data"
+      >
+        <div class="campo">
+          <label>Nombre:</label>
+          <input type="text" name="name" placeholder="Tu nombre" />
+        </div>
+
+        <div class="campo">
+          <label>E-mail:</label>
+          <input type="text" name="email" placeholder="Tu E-mail" />
+        </div>
+
+        <div class="campo">
+          <label>CV (PDF)</label>
+          <input type="file" name="cv" />
+        </div>
+
+        <div class="campo">
+          <input type="submit" class="btn btn-green" value="Enviar" />
+        </div>
+      </form>
+    </div>
+
+    <div class="info-reclutador">
+      <h2>Informacion Reclutador</h2>
+      {{#if job.author.name}}
+        <p>{{job.author.name}}</p>
+      {{/if}}
+
+      {{#if job.author.image}}
+        <img src="/uploads/perfiles/{{job.author.image}}" alt="" />
+      {{/if}}
+    </div>
+  </div>
+</article>
